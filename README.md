@@ -22,9 +22,8 @@
 > expectation-maximization techniques for these languages.
 
 **Diversity in Spectral Learning for Natural Language Parsing, Shashi
-  Narayan and Shay B. Cohen, to appear in the 2015 Conference on
-  Empirical Methods on Natural Language Processing (EMNLP), Lisbon,
-  Portugal.**
+  Narayan and Shay B. Cohen, Empirical Methods on Natural Language Processing (EMNLP), Lisbon,
+  Portugal 2015.**
 
 > We describe an approach to create a diverse set of predictions with
 > spectral learning of latent-variable PCFGs (L-PCFGs).  Our approach
