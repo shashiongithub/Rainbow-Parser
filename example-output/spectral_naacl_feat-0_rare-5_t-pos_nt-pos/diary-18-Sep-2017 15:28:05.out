@@ -1,0 +1,1105 @@
+Setting number of training instances: 250
+
+Normalise and denormalise /disk/ocean/snarayan/dist/lpcfgparser/example-data/ptb-example-train.txt
+Writing norm data to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.norm
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Writing denorm data to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Extract vocabulary from /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm
+Writing original vocabulary to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.vocab.org
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Original Vocab size: 2117
+
+Handling preterminals and rare-terminals in /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm
+Writing the final training corpus to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final
+Writing final vocabulary (for parsing) to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.vocab.parsing
+Writing training tagged corpus to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.toparse
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Final Vocab (denorm final, lower) size: 169
+
+Final Vocab (for parsing) size: 2146
+
+Generating training corpus for Prune Grammar from /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final
+Writing the Prune Grammar training corpus to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final.prunegrammar
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Generating the prune grammar from /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final.prunegrammar
+Writing the Prune Grammar to /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/grammar-prune.txt
+Starting clock [LPCFG-Basics]
+Reading trees (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final.prunegrammar
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Size of terminalsAlphabet: 177
+Size of nonterminalsAlphabet: 123
+Size of interminals: 47
+Size of preterminals: 76
+Size of all rules: 1173
+Size of unary rules: 289
+Size of binary rules: 884
+Initialising parameters ... pi ... q ... t ... normalising parameter ...
+Stopping clock [LPCFG-Basics]: 0 seconds
+Starting clock [LPCFG-Estimate]
+Reading trees (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final.prunegrammar
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Normalising parameters ...pi ...q ...t ...
+Stopping clock [LPCFG-Estimate]: 0 seconds
+Starting clock [LPCFG-Writing]
+Writing LPCFG to the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/grammar-prune.txt
+Stopping clock [LPCFG-Writing]: 0 seconds
+Development corpus: 
+Starting clock [Update NAACL Feature Dictionary]
+Extract NAACL Features...
+Reading lines (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final)
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Filter NAACL Features
+inside_unary: 281
+inside_unary [filtered]: 281
+inside_bin_left: 281
+inside_bin_left [filtered]: 281
+inside_bin_right: 391
+inside_bin_right [filtered]: 391
+inside_bin_full: 885
+inside_bin_full [filtered]: 885
+inside_bin_leftplus: 2026
+inside_bin_leftplus [filtered]: 2026
+inside_bin_rightplus: 2017
+inside_bin_rightplus [filtered]: 2017
+inside_nt_headpos: 371
+inside_nt_headpos [filtered]: 371
+inside_nt_numwords: 628
+inside_nt_numwords [filtered]: 628
+inside_nt_morph: 0
+inside_nt_morph [filtered]: 0
+inside_additional: 0
+outside_treeabove_1: 1763
+outside_treeabove_1 [filtered]: 1763
+outside_treeabove_2: 4902
+outside_treeabove_2 [filtered]: 4902
+outside_treeabove_3: 8033
+outside_treeabove_3 [filtered]: 8033
+outside_foot_parent: 564
+outside_foot_parent [filtered]: 564
+outside_foot_parent_grandparent: 1327
+outside_foot_parent_grandparent [filtered]: 1327
+outside_otherheadpos_above: 59
+outside_otherheadpos_above [filtered]: 59
+outside_foot_numwordsleft: 2034
+outside_foot_numwordsleft [filtered]: 2034
+outside_foot_numwordsright: 1982
+outside_foot_numwordsright [filtered]: 1982
+outside_additional: 0
+Printing NAACL Features
+Stopping clock [Update NAACL Feature Dictionary]: 0 seconds
+
+inside_features =
+
+        6880
+
+
+outside_features =
+
+       20664
+
+Starting clock [Extract-Nonterminals-Clock]
+Start updating corpusData with nonterminals ...
+Reading trees (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/train.denorm.final
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Size of terminalsAlphabet: 177
+Size of nonterminalsAlphabet: 123
+Stopping clock [Extract-Nonterminals-Clock]: 0 seconds
+Creating nonterminal file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/nonterminals.mat 
+Creating Inside-Outside directory: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/Inside-Outside 
+Starting clock [Inside-Outside Computation]
+Starting clock [Inside-Outside Computation: NAACL Features - One Go]
+..........................[10%, 1s]
+..........................[20%, 1s]
+..........................[31%, 2s]
+..........................[41%, 1s]
+..........................[51%, 1s]
+..........................[62%, 2s]
+..........................[72%, 2s]
+..........................[82%, 1s]
+..........................[93%, 1s]
+................Stopping clock [Inside-Outside Computation: NAACL Features - One Go]: 18 seconds
+Inside-Outside Computation: Additional Features Not Required
+Stopping clock [Inside-Outside Computation]: 18 seconds
+Creating SVD directory: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/SVD 
+Starting parallel pool (parpool) using the 'local' profile ... connected to 10 workers.
+ADVP^g|RBR : freq=2 : msvd=1 : SVD already computed.
+RBR : freq=8 : msvd=1 : SVD already computed.
+NP^g|JJ : freq=5 : msvd=1 : SVD already computed.
+: : freq=29 : msvd=2 : SVD already computed.
+SINV^g : freq=16 : msvd=2 : SVD already computed.
+@SINV^g : freq=73 : msvd=3 : SVD already computed.
+VP^g|VBD : freq=19 : msvd=2 : SVD already computed.
+ADJP^g|QP^g : freq=1 : msvd=1 : SVD already computed.
+NP^g|JJS : freq=4 : msvd=1 : SVD already computed.
+ADJP^g|JJR : freq=4 : msvd=1 : SVD already computed.
+FRAG^g|NP^g : freq=1 : msvd=1 : SVD already computed.
+ADJP^g|RP : freq=1 : msvd=1 : SVD already computed.
+NX^g|NNS : freq=3 : msvd=1 : SVD already computed.
+PRP : freq=1 : msvd=1 : SVD already computed.
+FRAG^g|ADJP^g : freq=1 : msvd=1 : SVD already computed.
+ADVP^g|JJR : freq=1 : msvd=1 : SVD already computed.
+UCP^g : freq=9 : msvd=1 : SVD already computed.
+@UCP^g : freq=13 : msvd=2 : SVD already computed.
+NP^g|NNS : freq=95 : msvd=3 : SVD already computed.
+VBG : freq=94 : msvd=3 : SVD already computed.
+S^g|VP^g : freq=171 : msvd=4 : SVD already computed.
+VP^g|VBZ : freq=16 : msvd=2 : SVD already computed.
+RP : freq=1 : msvd=1 : SVD already computed.
+NX^g : freq=17 : msvd=2 : SVD already computed.
+@FRAG^g : freq=6 : msvd=1 : SVD already computed.
+NX^g|NN : freq=2 : msvd=1 : SVD already computed.
+PP^g|IN : freq=2 : msvd=1 : SVD already computed.
+S^g|ADJP^g : freq=2 : msvd=1 : SVD already computed.
+ADJP^g|RB : freq=3 : msvd=1 : SVD already computed.
+WHPP^g : freq=2 : msvd=1 : SVD already computed.
+@PP^g : freq=29 : msvd=2 : SVD already computed.
+ADJP^g : freq=89 : msvd=3 : SVD already computed.
+MD : freq=77 : msvd=3 : SVD already computed.
+RB : freq=114 : msvd=4 : SVD already computed.
+VP^g|VBN : freq=11 : msvd=2 : SVD already computed.
+FW : freq=3 : msvd=1 : SVD already computed.
+SBAR^g|S^g|VP^g : freq=15 : msvd=2 : SVD already computed.
+SBAR^g|SINV^g : freq=1 : msvd=1 : SVD already computed.
+NP^g|WDT : freq=1 : msvd=1 : SVD already computed.
+SQ^g : freq=4 : msvd=1 : SVD already computed.
+@SQ^g : freq=10 : msvd=1 : SVD already computed.
+NP^g|DT : freq=18 : msvd=2 : SVD already computed.
+@NX^g : freq=15 : msvd=2 : SVD already computed.
+SBARQ^g : freq=1 : msvd=1 : SVD already computed.
+WHNP^g|WP : freq=23 : msvd=2 : SVD already computed.
+WHNP^g|WDT : freq=44 : msvd=2 : SVD already computed.
+JJR : freq=19 : msvd=2 : SVD already computed.
+PDT : freq=1 : msvd=1 : SVD already computed.
+S^g|VP^g|VBD : freq=1 : msvd=1 : SVD already computed.
+NP^g|NNPS : freq=2 : msvd=1 : SVD already computed.
+PP^g|TO : freq=1 : msvd=1 : SVD already computed.
+@SBARQ^g : freq=1 : msvd=1 : SVD already computed.
+SQ^g|VP^g : freq=1 : msvd=1 : SVD already computed.
+NP^g|FW : freq=1 : msvd=1 : SVD already computed.
+S^g|ADJP^g|JJ : freq=1 : msvd=1 : SVD already computed.
+WHADVP^g : freq=1 : msvd=1 : SVD already computed.
+WRB : freq=1 : msvd=1 : SVD already computed.
+NP^g|EX : freq=6 : msvd=1 : SVD already computed.
+NP^g|RB : freq=2 : msvd=1 : SVD already computed.
+CONJP^g : freq=3 : msvd=1 : SVD already computed.
+S^g|VP^g|VBZ : freq=1 : msvd=1 : SVD already computed.
+WHADVP^g|WRB : freq=8 : msvd=1 : SVD already computed.
+JJS : freq=7 : msvd=1 : SVD already computed.
+NP^g|QP^g : freq=11 : msvd=2 : SVD already computed.
+$ : freq=7 : msvd=1 : SVD already computed.
+PRT^g|RP : freq=25 : msvd=2 : SVD already computed.
+S^g|PP^g : freq=1 : msvd=1 : SVD already computed.
+VP^g|VB : freq=11 : msvd=2 : SVD already computed.
+S^g|NP^g : freq=4 : msvd=1 : SVD already computed.
+VP^g|VBP : freq=6 : msvd=1 : SVD already computed.
+SBAR^g : freq=141 : msvd=4 : SVD already computed.
+@SBAR^g : freq=13 : msvd=2 : SVD already computed.
+WHNP^g|IN : freq=2 : msvd=1 : SVD already computed.
+ADVP^g : freq=30 : msvd=2 : SVD already computed.
+@ADVP^g : freq=8 : msvd=1 : SVD already computed.
+QP^g : freq=14 : msvd=2 : SVD already computed.
+NP^g|CD : freq=16 : msvd=2 : SVD already computed.
+JJ : freq=461 : msvd=4 : SVD already computed.
+NP^g|NN : freq=119 : msvd=4 : SVD already computed.
+ADVP^g|RBS : freq=1 : msvd=1 : SVD already computed.
+@QP^g : freq=21 : msvd=2 : SVD already computed.
+NP^g|JJR : freq=1 : msvd=1 : SVD already computed.
+@ADJP^g : freq=28 : msvd=2 : SVD already computed.
+RBS : freq=5 : msvd=1 : SVD already computed.
+FRAG^g : freq=6 : msvd=1 : SVD already computed.
+NAC^g : freq=1 : msvd=1 : SVD already computed.
+@NAC^g : freq=3 : msvd=1 : SVD already computed.
+VBD : freq=141 : msvd=4 : SVD already computed.
+ADVP^g|RB : freq=135 : msvd=4 : SVD already computed.
+TO : freq=162 : msvd=4 : SVD already computed.
+NNS : freq=361 : msvd=4 : SVD already computed.
+VP^g : freq=765 : msvd=4 : SVD already computed.
+@VP^g : freq=397 : msvd=4 : SVD already computed.
+VBP : freq=90 : msvd=3 : SVD already computed.
+, : freq=371 : msvd=4 : SVD already computed.
+. : freq=249 : msvd=4 : SVD already computed.
+VBZ : freq=132 : msvd=4 : SVD already computed.
+NNPS : freq=23 : msvd=2 : SVD already computed.
+SBAR^g|S^g : freq=28 : msvd=2 : SVD already computed.
+'' : freq=70 : msvd=3 : SVD already computed.
+POS : freq=60 : msvd=3 : SVD already computed.
+PRN^g : freq=16 : msvd=2 : SVD already computed.
+@PRN^g : freq=24 : msvd=2 : SVD already computed.
+NP^g|PRP : freq=134 : msvd=4 : SVD already computed.
+PRP$ : freq=61 : msvd=3 : SVD already computed.
+VB : freq=195 : msvd=4 : SVD already computed.
+ADJP^g|JJ : freq=20 : msvd=2 : SVD already computed.
+CC : freq=191 : msvd=4 : SVD already computed.
+-RRB- : freq=8 : msvd=1 : SVD already computed.
+NP^g|NNP : freq=48 : msvd=2 : SVD already computed.
+NN : freq=738 : msvd=4 : SVD already computed.
+`` : freq=71 : msvd=3 : SVD already computed.
+-LRB- : freq=8 : msvd=1 : SVD already computed.
+VBN : freq=123 : msvd=4 : SVD already computed.
+NNP : freq=449 : msvd=4 : SVD already computed.
+CD : freq=75 : msvd=3 : SVD already computed.
+IN : freq=617 : msvd=4 : SVD already computed.
+NP^g : freq=1572 : msvd=4 : SVD already computed.
+@NP^g : freq=1021 : msvd=4 : SVD already computed.
+DT : freq=566 : msvd=4 : SVD already computed.
+@S^g : freq=534 : msvd=4 : SVD already computed.
+PP^g : freq=594 : msvd=4 : SVD already computed.
+S^g : freq=420 : msvd=4 : SVD already computed.
+Parallel pool using the 'local' profile is shutting down.
+Starting estimating the grammar with default cutoff for latent states.
+Starting parallel pool (parpool) using the 'local' profile ... connected to 10 workers.
+Clustering
+Creating Cluster directory: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/Clusters-kmeans 
+ADVP^g|RBS : freq=1 : cl=1 : msvd=1
+Save kmeans results: [ADVP^g|RBS]
+Stopping Clock [ADVP^g|RBS-1]: 0.006032 Seconds
+@QP^g : freq=21 : cl=1 : msvd=2
+Save kmeans results: [@QP^g]
+Stopping Clock [@QP^g-1]: 0.003401 Seconds
+NP^g|JJR : freq=1 : cl=1 : msvd=1
+Save kmeans results: [NP^g|JJR]
+Stopping Clock [NP^g|JJR-1]: 0.004336 Seconds
+@ADJP^g : freq=28 : cl=1 : msvd=2
+Save kmeans results: [@ADJP^g]
+Stopping Clock [@ADJP^g-1]: 0.005500 Seconds
+RBS : freq=5 : cl=1 : msvd=1
+Save kmeans results: [RBS]
+Stopping Clock [RBS-1]: 0.003522 Seconds
+FRAG^g : freq=6 : cl=1 : msvd=1
+Save kmeans results: [FRAG^g]
+Stopping Clock [FRAG^g-1]: 0.005846 Seconds
+NAC^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [NAC^g]
+Stopping Clock [NAC^g-1]: 0.005654 Seconds
+@NAC^g : freq=3 : cl=1 : msvd=1
+Save kmeans results: [@NAC^g]
+Stopping Clock [@NAC^g-1]: 0.003158 Seconds
+ADJP^g|QP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [ADJP^g|QP^g]
+Stopping Clock [ADJP^g|QP^g-1]: 0.006336 Seconds
+NP^g|JJS : freq=4 : cl=1 : msvd=1
+Save kmeans results: [NP^g|JJS]
+Stopping Clock [NP^g|JJS-1]: 0.002709 Seconds
+ADJP^g|JJR : freq=4 : cl=1 : msvd=1
+Save kmeans results: [ADJP^g|JJR]
+Stopping Clock [ADJP^g|JJR-1]: 0.002880 Seconds
+FRAG^g|NP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [FRAG^g|NP^g]
+Stopping Clock [FRAG^g|NP^g-1]: 0.003043 Seconds
+ADJP^g|RP : freq=1 : cl=1 : msvd=1
+Save kmeans results: [ADJP^g|RP]
+Stopping Clock [ADJP^g|RP-1]: 0.003524 Seconds
+NX^g|NNS : freq=3 : cl=1 : msvd=1
+Save kmeans results: [NX^g|NNS]
+Stopping Clock [NX^g|NNS-1]: 0.005195 Seconds
+PRP : freq=1 : cl=1 : msvd=1
+Save kmeans results: [PRP]
+Stopping Clock [PRP-1]: 0.003256 Seconds
+FRAG^g|ADJP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [FRAG^g|ADJP^g]
+Stopping Clock [FRAG^g|ADJP^g-1]: 0.006442 Seconds
+ADVP^g|JJR : freq=1 : cl=1 : msvd=1
+Save kmeans results: [ADVP^g|JJR]
+Stopping Clock [ADVP^g|JJR-1]: 0.003564 Seconds
+WHNP^g|WP : freq=23 : cl=1 : msvd=2
+Save kmeans results: [WHNP^g|WP]
+Stopping Clock [WHNP^g|WP-1]: 0.007673 Seconds
+WHNP^g|WDT : freq=44 : cl=1 : msvd=2
+Save kmeans results: [WHNP^g|WDT]
+Stopping Clock [WHNP^g|WDT-1]: 0.003705 Seconds
+JJR : freq=19 : cl=1 : msvd=2
+Save kmeans results: [JJR]
+Stopping Clock [JJR-1]: 0.006741 Seconds
+PDT : freq=1 : cl=1 : msvd=1
+Save kmeans results: [PDT]
+Stopping Clock [PDT-1]: 0.006802 Seconds
+S^g|VP^g|VBD : freq=1 : cl=1 : msvd=1
+Save kmeans results: [S^g|VP^g|VBD]
+Stopping Clock [S^g|VP^g|VBD-1]: 0.003696 Seconds
+NP^g|NNPS : freq=2 : cl=1 : msvd=1
+Save kmeans results: [NP^g|NNPS]
+Stopping Clock [NP^g|NNPS-1]: 0.004709 Seconds
+PP^g|TO : freq=1 : cl=1 : msvd=1
+Save kmeans results: [PP^g|TO]
+Stopping Clock [PP^g|TO-1]: 0.003887 Seconds
+FW : freq=3 : cl=1 : msvd=1
+Save kmeans results: [FW]
+Stopping Clock [FW-1]: 0.006219 Seconds
+SBAR^g|S^g|VP^g : freq=15 : cl=1 : msvd=2
+Save kmeans results: [SBAR^g|S^g|VP^g]
+Stopping Clock [SBAR^g|S^g|VP^g-1]: 0.005637 Seconds
+SBAR^g|SINV^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [SBAR^g|SINV^g]
+Stopping Clock [SBAR^g|SINV^g-1]: 0.003586 Seconds
+NP^g|WDT : freq=1 : cl=1 : msvd=1
+Save kmeans results: [NP^g|WDT]
+Stopping Clock [NP^g|WDT-1]: 0.007565 Seconds
+SQ^g : freq=4 : cl=1 : msvd=1
+Save kmeans results: [SQ^g]
+Stopping Clock [SQ^g-1]: 0.004713 Seconds
+@SQ^g : freq=10 : cl=1 : msvd=1
+Save kmeans results: [@SQ^g]
+Stopping Clock [@SQ^g-1]: 0.004003 Seconds
+NP^g|DT : freq=18 : cl=1 : msvd=2
+Save kmeans results: [NP^g|DT]
+Stopping Clock [NP^g|DT-1]: 0.004231 Seconds
+@NX^g : freq=15 : cl=1 : msvd=2
+Save kmeans results: [@NX^g]
+Stopping Clock [@NX^g-1]: 0.003356 Seconds
+SBARQ^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [SBARQ^g]
+Stopping Clock [SBARQ^g-1]: 0.003238 Seconds
+S^g|VP^g|VBZ : freq=1 : cl=1 : msvd=1
+Save kmeans results: [S^g|VP^g|VBZ]
+Stopping Clock [S^g|VP^g|VBZ-1]: 0.009020 Seconds
+WHADVP^g|WRB : freq=8 : cl=1 : msvd=1
+Save kmeans results: [WHADVP^g|WRB]
+Stopping Clock [WHADVP^g|WRB-1]: 0.007913 Seconds
+JJS : freq=7 : cl=1 : msvd=1
+Save kmeans results: [JJS]
+Stopping Clock [JJS-1]: 0.005359 Seconds
+NP^g|QP^g : freq=11 : cl=1 : msvd=2
+Save kmeans results: [NP^g|QP^g]
+Stopping Clock [NP^g|QP^g-1]: 0.004187 Seconds
+$ : freq=7 : cl=1 : msvd=1
+Save kmeans results: [$]
+Stopping Clock [$-1]: 0.005108 Seconds
+PRT^g|RP : freq=25 : cl=1 : msvd=2
+Save kmeans results: [PRT^g|RP]
+Stopping Clock [PRT^g|RP-1]: 0.003314 Seconds
+S^g|PP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [S^g|PP^g]
+Stopping Clock [S^g|PP^g-1]: 0.003136 Seconds
+VP^g|VB : freq=11 : cl=1 : msvd=2
+Save kmeans results: [VP^g|VB]
+Stopping Clock [VP^g|VB-1]: 0.002598 Seconds
+S^g|NP^g : freq=4 : cl=1 : msvd=1
+Save kmeans results: [S^g|NP^g]
+Stopping Clock [S^g|NP^g-1]: 0.002742 Seconds
+VP^g|VBZ : freq=16 : cl=1 : msvd=2
+Save kmeans results: [VP^g|VBZ]
+Stopping Clock [VP^g|VBZ-1]: 0.006399 Seconds
+RP : freq=1 : cl=1 : msvd=1
+Save kmeans results: [RP]
+Stopping Clock [RP-1]: 0.004912 Seconds
+NX^g : freq=17 : cl=1 : msvd=2
+Save kmeans results: [NX^g]
+Stopping Clock [NX^g-1]: 0.007972 Seconds
+@FRAG^g : freq=6 : cl=1 : msvd=1
+Save kmeans results: [@FRAG^g]
+Stopping Clock [@FRAG^g-1]: 0.005685 Seconds
+NX^g|NN : freq=2 : cl=1 : msvd=1
+Save kmeans results: [NX^g|NN]
+Stopping Clock [NX^g|NN-1]: 0.004903 Seconds
+PP^g|IN : freq=2 : cl=1 : msvd=1
+Save kmeans results: [PP^g|IN]
+Stopping Clock [PP^g|IN-1]: 0.003718 Seconds
+S^g|ADJP^g : freq=2 : cl=1 : msvd=1
+Save kmeans results: [S^g|ADJP^g]
+Stopping Clock [S^g|ADJP^g-1]: 0.004025 Seconds
+ADJP^g|RB : freq=3 : cl=1 : msvd=1
+Save kmeans results: [ADJP^g|RB]
+Stopping Clock [ADJP^g|RB-1]: 0.003313 Seconds
+WHPP^g : freq=2 : cl=1 : msvd=1
+Save kmeans results: [WHPP^g]
+Stopping Clock [WHPP^g-1]: 0.002563 Seconds
+@SBARQ^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [@SBARQ^g]
+Stopping Clock [@SBARQ^g-1]: 0.007491 Seconds
+SQ^g|VP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [SQ^g|VP^g]
+Stopping Clock [SQ^g|VP^g-1]: 0.008496 Seconds
+NP^g|FW : freq=1 : cl=1 : msvd=1
+Save kmeans results: [NP^g|FW]
+Stopping Clock [NP^g|FW-1]: 0.007372 Seconds
+S^g|ADJP^g|JJ : freq=1 : cl=1 : msvd=1
+Save kmeans results: [S^g|ADJP^g|JJ]
+Stopping Clock [S^g|ADJP^g|JJ-1]: 0.006031 Seconds
+WHADVP^g : freq=1 : cl=1 : msvd=1
+Save kmeans results: [WHADVP^g]
+Stopping Clock [WHADVP^g-1]: 0.003938 Seconds
+WRB : freq=1 : cl=1 : msvd=1
+Save kmeans results: [WRB]
+Stopping Clock [WRB-1]: 0.003326 Seconds
+NP^g|EX : freq=6 : cl=1 : msvd=1
+Save kmeans results: [NP^g|EX]
+Stopping Clock [NP^g|EX-1]: 0.003007 Seconds
+NP^g|RB : freq=2 : cl=1 : msvd=1
+Save kmeans results: [NP^g|RB]
+Stopping Clock [NP^g|RB-1]: 0.002310 Seconds
+CONJP^g : freq=3 : cl=1 : msvd=1
+Save kmeans results: [CONJP^g]
+Stopping Clock [CONJP^g-1]: 0.002463 Seconds
+ADVP^g|RBR : freq=2 : cl=1 : msvd=1
+Save kmeans results: [ADVP^g|RBR]
+Stopping Clock [ADVP^g|RBR-1]: 0.007135 Seconds
+RBR : freq=8 : cl=1 : msvd=1
+Save kmeans results: [RBR]
+Stopping Clock [RBR-1]: 0.003839 Seconds
+NP^g|JJ : freq=5 : cl=1 : msvd=1
+Save kmeans results: [NP^g|JJ]
+Stopping Clock [NP^g|JJ-1]: 0.006905 Seconds
+: : freq=29 : cl=1 : msvd=2
+Save kmeans results: [:]
+Stopping Clock [:-1]: 0.004357 Seconds
+SINV^g : freq=16 : cl=1 : msvd=2
+Save kmeans results: [SINV^g]
+Stopping Clock [SINV^g-1]: 0.005166 Seconds
+@SINV^g : freq=73 : cl=2 : msvd=3
+Loading inside and outside matrices: @SINV^g
+Loading SVDs S, U and V  matrices: @SINV^g
+Select meaningful eigen values (> 0.010000): @SINV^g
+Before : 3 and After : 3 : @SINV^g
+Dimension reduction: Insidematrix and OutsideMatrix : @SINV^g
+Kmeans Clustering : @SINV^g : 73 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [@SINV^g]
+Stopping Clock [@SINV^g-2]: 0.340875 Seconds
+VP^g|VBD : freq=19 : cl=1 : msvd=2
+Save kmeans results: [VP^g|VBD]
+Stopping Clock [VP^g|VBD-1]: 0.002290 Seconds
+CC : freq=191 : cl=2 : msvd=4
+Loading inside and outside matrices: CC
+Loading SVDs S, U and V  matrices: CC
+Select meaningful eigen values (> 0.010000): CC
+Before : 4 and After : 4 : CC
+Dimension reduction: Insidematrix and OutsideMatrix : CC
+Kmeans Clustering : CC : 191 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [CC]
+Stopping Clock [CC-2]: 0.316066 Seconds
+-RRB- : freq=8 : cl=1 : msvd=1
+Save kmeans results: [-RRB-]
+Stopping Clock [-RRB--1]: 0.002940 Seconds
+NP^g|NNP : freq=48 : cl=1 : msvd=2
+Save kmeans results: [NP^g|NNP]
+Stopping Clock [NP^g|NNP-1]: 0.003024 Seconds
+VP^g|VBP : freq=6 : cl=1 : msvd=1
+Save kmeans results: [VP^g|VBP]
+Stopping Clock [VP^g|VBP-1]: 0.006939 Seconds
+SBAR^g : freq=141 : cl=2 : msvd=4
+Loading inside and outside matrices: SBAR^g
+Loading SVDs S, U and V  matrices: SBAR^g
+Select meaningful eigen values (> 0.010000): SBAR^g
+Before : 4 and After : 4 : SBAR^g
+Dimension reduction: Insidematrix and OutsideMatrix : SBAR^g
+Kmeans Clustering : SBAR^g : 141 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [SBAR^g]
+Stopping Clock [SBAR^g-2]: 0.388704 Seconds
+@SBAR^g : freq=13 : cl=1 : msvd=2
+Save kmeans results: [@SBAR^g]
+Stopping Clock [@SBAR^g-1]: 0.002447 Seconds
+WHNP^g|IN : freq=2 : cl=1 : msvd=1
+Save kmeans results: [WHNP^g|IN]
+Stopping Clock [WHNP^g|IN-1]: 0.002232 Seconds
+ADVP^g : freq=30 : cl=1 : msvd=2
+Save kmeans results: [ADVP^g]
+Stopping Clock [ADVP^g-1]: 0.002521 Seconds
+@ADVP^g : freq=8 : cl=1 : msvd=1
+Save kmeans results: [@ADVP^g]
+Stopping Clock [@ADVP^g-1]: 0.002594 Seconds
+. : freq=249 : cl=2 : msvd=4
+Loading inside and outside matrices: .
+Loading SVDs S, U and V  matrices: .
+Select meaningful eigen values (> 0.010000): .
+Before : 4 and After : 2 : .
+Dimension reduction: Insidematrix and OutsideMatrix : .
+Kmeans Clustering : . : 249 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [.]
+Stopping Clock [.-2]: 0.310272 Seconds
+VBZ : freq=132 : cl=2 : msvd=4
+Loading inside and outside matrices: VBZ
+Loading SVDs S, U and V  matrices: VBZ
+Select meaningful eigen values (> 0.010000): VBZ
+Before : 4 and After : 4 : VBZ
+Dimension reduction: Insidematrix and OutsideMatrix : VBZ
+Kmeans Clustering : VBZ : 132 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VBZ]
+Stopping Clock [VBZ-2]: 0.053945 Seconds
+NNPS : freq=23 : cl=1 : msvd=2
+Save kmeans results: [NNPS]
+Stopping Clock [NNPS-1]: 0.002570 Seconds
+SBAR^g|S^g : freq=28 : cl=1 : msvd=2
+Save kmeans results: [SBAR^g|S^g]
+Stopping Clock [SBAR^g|S^g-1]: 0.002269 Seconds
+PRN^g : freq=16 : cl=1 : msvd=2
+Save kmeans results: [PRN^g]
+Stopping Clock [PRN^g-1]: 0.003412 Seconds
+@PRN^g : freq=24 : cl=1 : msvd=2
+Save kmeans results: [@PRN^g]
+Stopping Clock [@PRN^g-1]: 0.003030 Seconds
+QP^g : freq=14 : cl=1 : msvd=2
+Save kmeans results: [QP^g]
+Stopping Clock [QP^g-1]: 0.003262 Seconds
+NP^g|CD : freq=16 : cl=1 : msvd=2
+Save kmeans results: [NP^g|CD]
+Stopping Clock [NP^g|CD-1]: 0.002713 Seconds
+JJ : freq=461 : cl=3 : msvd=4
+Loading inside and outside matrices: JJ
+Loading SVDs S, U and V  matrices: JJ
+Select meaningful eigen values (> 0.010000): JJ
+Before : 4 and After : 4 : JJ
+Dimension reduction: Insidematrix and OutsideMatrix : JJ
+Kmeans Clustering : JJ : 461 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [JJ]
+Stopping Clock [JJ-3]: 0.358709 Seconds
+NP^g|NN : freq=119 : cl=2 : msvd=4
+Loading inside and outside matrices: NP^g|NN
+Loading SVDs S, U and V  matrices: NP^g|NN
+Select meaningful eigen values (> 0.010000): NP^g|NN
+Before : 4 and After : 4 : NP^g|NN
+Dimension reduction: Insidematrix and OutsideMatrix : NP^g|NN
+Kmeans Clustering : NP^g|NN : 119 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [NP^g|NN]
+Stopping Clock [NP^g|NN-2]: 0.044863 Seconds
+-LRB- : freq=8 : cl=1 : msvd=1
+Save kmeans results: [-LRB-]
+Stopping Clock [-LRB--1]: 0.003141 Seconds
+VBN : freq=123 : cl=2 : msvd=4
+Loading inside and outside matrices: VBN
+Loading SVDs S, U and V  matrices: VBN
+Select meaningful eigen values (> 0.010000): VBN
+Before : 4 and After : 4 : VBN
+Dimension reduction: Insidematrix and OutsideMatrix : VBN
+Kmeans Clustering : VBN : 123 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VBN]
+Stopping Clock [VBN-2]: 0.043642 Seconds
+VBD : freq=141 : cl=2 : msvd=4
+Loading inside and outside matrices: VBD
+Loading SVDs S, U and V  matrices: VBD
+Select meaningful eigen values (> 0.010000): VBD
+Before : 4 and After : 4 : VBD
+Dimension reduction: Insidematrix and OutsideMatrix : VBD
+Kmeans Clustering : VBD : 141 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VBD]
+Stopping Clock [VBD-2]: 0.321493 Seconds
+ADVP^g|RB : freq=135 : cl=2 : msvd=4
+Loading inside and outside matrices: ADVP^g|RB
+Loading SVDs S, U and V  matrices: ADVP^g|RB
+Select meaningful eigen values (> 0.010000): ADVP^g|RB
+Before : 4 and After : 4 : ADVP^g|RB
+Dimension reduction: Insidematrix and OutsideMatrix : ADVP^g|RB
+Kmeans Clustering : ADVP^g|RB : 135 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [ADVP^g|RB]
+Stopping Clock [ADVP^g|RB-2]: 0.054542 Seconds
+TO : freq=162 : cl=2 : msvd=4
+Loading inside and outside matrices: TO
+Loading SVDs S, U and V  matrices: TO
+Select meaningful eigen values (> 0.010000): TO
+Before : 4 and After : 1 : TO
+Dimension reduction: Insidematrix and OutsideMatrix : TO
+Kmeans Clustering : TO : 162 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [TO]
+Stopping Clock [TO-2]: 0.050598 Seconds
+@PP^g : freq=29 : cl=1 : msvd=2
+Save kmeans results: [@PP^g]
+Stopping Clock [@PP^g-1]: 0.003382 Seconds
+ADJP^g : freq=89 : cl=2 : msvd=3
+Loading inside and outside matrices: ADJP^g
+Loading SVDs S, U and V  matrices: ADJP^g
+Select meaningful eigen values (> 0.010000): ADJP^g
+Before : 3 and After : 3 : ADJP^g
+Dimension reduction: Insidematrix and OutsideMatrix : ADJP^g
+Kmeans Clustering : ADJP^g : 89 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [ADJP^g]
+Stopping Clock [ADJP^g-2]: 0.356927 Seconds
+MD : freq=77 : cl=2 : msvd=3
+Loading inside and outside matrices: MD
+Loading SVDs S, U and V  matrices: MD
+Select meaningful eigen values (> 0.010000): MD
+Before : 3 and After : 3 : MD
+Dimension reduction: Insidematrix and OutsideMatrix : MD
+Kmeans Clustering : MD : 77 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [MD]
+Stopping Clock [MD-2]: 0.042599 Seconds
+RB : freq=114 : cl=2 : msvd=4
+Loading inside and outside matrices: RB
+Loading SVDs S, U and V  matrices: RB
+Select meaningful eigen values (> 0.010000): RB
+Before : 4 and After : 4 : RB
+Dimension reduction: Insidematrix and OutsideMatrix : RB
+Kmeans Clustering : RB : 114 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [RB]
+Stopping Clock [RB-2]: 0.046650 Seconds
+VP^g|VBN : freq=11 : cl=1 : msvd=2
+Save kmeans results: [VP^g|VBN]
+Stopping Clock [VP^g|VBN-1]: 0.002439 Seconds
+NP^g|PRP : freq=134 : cl=2 : msvd=4
+Loading inside and outside matrices: NP^g|PRP
+Loading SVDs S, U and V  matrices: NP^g|PRP
+Select meaningful eigen values (> 0.010000): NP^g|PRP
+Before : 4 and After : 4 : NP^g|PRP
+Dimension reduction: Insidematrix and OutsideMatrix : NP^g|PRP
+Kmeans Clustering : NP^g|PRP : 134 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [NP^g|PRP]
+Stopping Clock [NP^g|PRP-2]: 0.397646 Seconds
+PRP$ : freq=61 : cl=2 : msvd=3
+Loading inside and outside matrices: PRP$
+Loading SVDs S, U and V  matrices: PRP$
+Select meaningful eigen values (> 0.010000): PRP$
+Before : 3 and After : 3 : PRP$
+Dimension reduction: Insidematrix and OutsideMatrix : PRP$
+Kmeans Clustering : PRP$ : 61 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [PRP$]
+Stopping Clock [PRP$-2]: 0.039113 Seconds
+VB : freq=195 : cl=2 : msvd=4
+Loading inside and outside matrices: VB
+Loading SVDs S, U and V  matrices: VB
+Select meaningful eigen values (> 0.010000): VB
+Before : 4 and After : 4 : VB
+Dimension reduction: Insidematrix and OutsideMatrix : VB
+Kmeans Clustering : VB : 195 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VB]
+Stopping Clock [VB-2]: 0.044061 Seconds
+ADJP^g|JJ : freq=20 : cl=1 : msvd=2
+Save kmeans results: [ADJP^g|JJ]
+Stopping Clock [ADJP^g|JJ-1]: 0.002377 Seconds
+UCP^g : freq=9 : cl=1 : msvd=1
+Save kmeans results: [UCP^g]
+Stopping Clock [UCP^g-1]: 0.009958 Seconds
+@UCP^g : freq=13 : cl=1 : msvd=2
+Save kmeans results: [@UCP^g]
+Stopping Clock [@UCP^g-1]: 0.006386 Seconds
+NP^g|NNS : freq=95 : cl=2 : msvd=3
+Loading inside and outside matrices: NP^g|NNS
+Loading SVDs S, U and V  matrices: NP^g|NNS
+Select meaningful eigen values (> 0.010000): NP^g|NNS
+Before : 3 and After : 3 : NP^g|NNS
+Dimension reduction: Insidematrix and OutsideMatrix : NP^g|NNS
+Kmeans Clustering : NP^g|NNS : 95 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [NP^g|NNS]
+Stopping Clock [NP^g|NNS-2]: 0.397260 Seconds
+VBG : freq=94 : cl=2 : msvd=3
+Loading inside and outside matrices: VBG
+Loading SVDs S, U and V  matrices: VBG
+Select meaningful eigen values (> 0.010000): VBG
+Before : 3 and After : 1 : VBG
+Dimension reduction: Insidematrix and OutsideMatrix : VBG
+Kmeans Clustering : VBG : 94 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VBG]
+Stopping Clock [VBG-2]: 0.048979 Seconds
+S^g|VP^g : freq=171 : cl=2 : msvd=4
+Loading inside and outside matrices: S^g|VP^g
+Loading SVDs S, U and V  matrices: S^g|VP^g
+Select meaningful eigen values (> 0.010000): S^g|VP^g
+Before : 4 and After : 4 : S^g|VP^g
+Dimension reduction: Insidematrix and OutsideMatrix : S^g|VP^g
+Kmeans Clustering : S^g|VP^g : 171 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [S^g|VP^g]
+Stopping Clock [S^g|VP^g-2]: 0.048027 Seconds
+@VP^g : freq=397 : cl=3 : msvd=4
+Loading inside and outside matrices: @VP^g
+Loading SVDs S, U and V  matrices: @VP^g
+Select meaningful eigen values (> 0.010000): @VP^g
+Before : 4 and After : 4 : @VP^g
+Dimension reduction: Insidematrix and OutsideMatrix : @VP^g
+Kmeans Clustering : @VP^g : 397 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [@VP^g]
+Stopping Clock [@VP^g-3]: 0.358735 Seconds
+VBP : freq=90 : cl=2 : msvd=3
+Loading inside and outside matrices: VBP
+Loading SVDs S, U and V  matrices: VBP
+Select meaningful eigen values (> 0.010000): VBP
+Before : 3 and After : 3 : VBP
+Dimension reduction: Insidematrix and OutsideMatrix : VBP
+Kmeans Clustering : VBP : 90 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [VBP]
+Stopping Clock [VBP-2]: 0.045818 Seconds
+, : freq=371 : cl=3 : msvd=4
+Loading inside and outside matrices: ,
+Loading SVDs S, U and V  matrices: ,
+Select meaningful eigen values (> 0.010000): ,
+Before : 4 and After : 1 : ,
+Dimension reduction: Insidematrix and OutsideMatrix : ,
+Kmeans Clustering : , : 371 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [,]
+Stopping Clock [,-3]: 0.074992 Seconds
+'' : freq=70 : cl=2 : msvd=3
+Loading inside and outside matrices: ''
+Loading SVDs S, U and V  matrices: ''
+Select meaningful eigen values (> 0.010000): ''
+Before : 3 and After : 1 : ''
+Dimension reduction: Insidematrix and OutsideMatrix : ''
+Kmeans Clustering : '' : 70 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: ['']
+Stopping Clock [''-2]: 0.039188 Seconds
+POS : freq=60 : cl=2 : msvd=3
+Loading inside and outside matrices: POS
+Loading SVDs S, U and V  matrices: POS
+Select meaningful eigen values (> 0.010000): POS
+Before : 3 and After : 2 : POS
+Dimension reduction: Insidematrix and OutsideMatrix : POS
+Kmeans Clustering : POS : 60 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [POS]
+Stopping Clock [POS-2]: 0.034825 Seconds
+NNS : freq=361 : cl=3 : msvd=4
+Loading inside and outside matrices: NNS
+Loading SVDs S, U and V  matrices: NNS
+Select meaningful eigen values (> 0.010000): NNS
+Before : 4 and After : 4 : NNS
+Dimension reduction: Insidematrix and OutsideMatrix : NNS
+Kmeans Clustering : NNS : 361 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [NNS]
+Stopping Clock [NNS-3]: 0.087386 Seconds
+VP^g : freq=765 : cl=4 : msvd=4
+Loading inside and outside matrices: VP^g
+Loading SVDs S, U and V  matrices: VP^g
+Select meaningful eigen values (> 0.010000): VP^g
+Before : 4 and After : 4 : VP^g
+Dimension reduction: Insidematrix and OutsideMatrix : VP^g
+Kmeans Clustering : VP^g : 765 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [VP^g]
+Stopping Clock [VP^g-4]: 0.109412 Seconds
+NNP : freq=449 : cl=3 : msvd=4
+Loading inside and outside matrices: NNP
+Loading SVDs S, U and V  matrices: NNP
+Select meaningful eigen values (> 0.010000): NNP
+Before : 4 and After : 4 : NNP
+Dimension reduction: Insidematrix and OutsideMatrix : NNP
+Kmeans Clustering : NNP : 449 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [NNP]
+Stopping Clock [NNP-3]: 0.065101 Seconds
+CD : freq=75 : cl=2 : msvd=3
+Loading inside and outside matrices: CD
+Loading SVDs S, U and V  matrices: CD
+Select meaningful eigen values (> 0.010000): CD
+Before : 3 and After : 3 : CD
+Dimension reduction: Insidematrix and OutsideMatrix : CD
+Kmeans Clustering : CD : 75 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [CD]
+Stopping Clock [CD-2]: 0.036013 Seconds
+S^g : freq=420 : cl=3 : msvd=4
+Loading inside and outside matrices: S^g
+Loading SVDs S, U and V  matrices: S^g
+Select meaningful eigen values (> 0.010000): S^g
+Before : 4 and After : 4 : S^g
+Dimension reduction: Insidematrix and OutsideMatrix : S^g
+Kmeans Clustering : S^g : 420 : MaxIter=1000 : Replicates:10 : Clusters:3
+Save kmeans results: [S^g]
+Stopping Clock [S^g-3]: 0.096212 Seconds
+NN : freq=738 : cl=4 : msvd=4
+Loading inside and outside matrices: NN
+Loading SVDs S, U and V  matrices: NN
+Select meaningful eigen values (> 0.010000): NN
+Before : 4 and After : 4 : NN
+Dimension reduction: Insidematrix and OutsideMatrix : NN
+Kmeans Clustering : NN : 738 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [NN]
+Stopping Clock [NN-4]: 0.120299 Seconds
+`` : freq=71 : cl=2 : msvd=3
+Loading inside and outside matrices: ``
+Loading SVDs S, U and V  matrices: ``
+Select meaningful eigen values (> 0.010000): ``
+Before : 3 and After : 1 : ``
+Dimension reduction: Insidematrix and OutsideMatrix : ``
+Kmeans Clustering : `` : 71 : MaxIter=1000 : Replicates:10 : Clusters:2
+Save kmeans results: [``]
+Stopping Clock [``-2]: 0.047535 Seconds
+@S^g : freq=534 : cl=4 : msvd=4
+Loading inside and outside matrices: @S^g
+Loading SVDs S, U and V  matrices: @S^g
+Select meaningful eigen values (> 0.010000): @S^g
+Before : 4 and After : 4 : @S^g
+Dimension reduction: Insidematrix and OutsideMatrix : @S^g
+Kmeans Clustering : @S^g : 534 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [@S^g]
+Stopping Clock [@S^g-4]: 0.081558 Seconds
+PP^g : freq=594 : cl=4 : msvd=4
+Loading inside and outside matrices: PP^g
+Loading SVDs S, U and V  matrices: PP^g
+Select meaningful eigen values (> 0.010000): PP^g
+Before : 4 and After : 4 : PP^g
+Dimension reduction: Insidematrix and OutsideMatrix : PP^g
+Kmeans Clustering : PP^g : 594 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [PP^g]
+Stopping Clock [PP^g-4]: 0.085785 Seconds
+@NP^g : freq=1021 : cl=4 : msvd=4
+Loading inside and outside matrices: @NP^g
+Loading SVDs S, U and V  matrices: @NP^g
+Select meaningful eigen values (> 0.010000): @NP^g
+Before : 4 and After : 4 : @NP^g
+Dimension reduction: Insidematrix and OutsideMatrix : @NP^g
+Kmeans Clustering : @NP^g : 1021 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [@NP^g]
+Stopping Clock [@NP^g-4]: 0.081183 Seconds
+DT : freq=566 : cl=4 : msvd=4
+Loading inside and outside matrices: DT
+Loading SVDs S, U and V  matrices: DT
+Select meaningful eigen values (> 0.010000): DT
+Before : 4 and After : 4 : DT
+Dimension reduction: Insidematrix and OutsideMatrix : DT
+Kmeans Clustering : DT : 566 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [DT]
+Stopping Clock [DT-4]: 0.136159 Seconds
+IN : freq=617 : cl=4 : msvd=4
+Loading inside and outside matrices: IN
+Loading SVDs S, U and V  matrices: IN
+Select meaningful eigen values (> 0.010000): IN
+Before : 4 and After : 4 : IN
+Dimension reduction: Insidematrix and OutsideMatrix : IN
+Kmeans Clustering : IN : 617 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [IN]
+Stopping Clock [IN-4]: 0.076327 Seconds
+NP^g : freq=1572 : cl=4 : msvd=4
+Loading inside and outside matrices: NP^g
+Loading SVDs S, U and V  matrices: NP^g
+Select meaningful eigen values (> 0.010000): NP^g
+Before : 4 and After : 4 : NP^g
+Dimension reduction: Insidematrix and OutsideMatrix : NP^g
+Kmeans Clustering : NP^g : 1572 : MaxIter=1000 : Replicates:10 : Clusters:4
+Save kmeans results: [NP^g]
+Stopping Clock [NP^g-4]: 0.116340 Seconds
+Creating Training and Grammar directory: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/StandardClusterEstimate-kmeans 
+Loading Cluster file and Update Queue: Clusters-ADVP^g|JJR-1.mat
+Loading Cluster file and Update Queue: Clusters-FRAG^g|ADJP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-PRP-1.mat
+Loading Cluster file and Update Queue: Clusters-NX^g|NNS-1.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g|RP-1.mat
+Loading Cluster file and Update Queue: Clusters-FRAG^g|NP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g|JJR-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|JJS-1.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g|QP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-CONJP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|RB-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|EX-1.mat
+Loading Cluster file and Update Queue: Clusters-WRB-1.mat
+Loading Cluster file and Update Queue: Clusters-WHADVP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|ADJP^g|JJ-1.mat
+Loading Cluster file and Update Queue: Clusters-SQ^g|VP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|FW-1.mat
+Loading Cluster file and Update Queue: Clusters-SBARQ^g-1.mat
+Loading Cluster file and Update Queue: Clusters-@SBARQ^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|DT-1.mat
+Loading Cluster file and Update Queue: Clusters-@NX^g-1.mat
+Loading Cluster file and Update Queue: Clusters-SQ^g-1.mat
+Loading Cluster file and Update Queue: Clusters-@SQ^g-1.mat
+Loading Cluster file and Update Queue: Clusters-SBAR^g|SINV^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|WDT-1.mat
+Loading Cluster file and Update Queue: Clusters-FW-1.mat
+Loading Cluster file and Update Queue: Clusters-SBAR^g|S^g|VP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g|RB-1.mat
+Loading Cluster file and Update Queue: Clusters-WHPP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-PP^g|IN-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|ADJP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NX^g-1.mat
+Loading Cluster file and Update Queue: Clusters-RP-1.mat
+Loading Cluster file and Update Queue: Clusters-NX^g|NN-1.mat
+Loading Cluster file and Update Queue: Clusters-@FRAG^g-1.mat
+Loading Cluster file and Update Queue: Clusters-VP^g|VB-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|PP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-VP^g|VBZ-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|NP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|QP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-JJS-1.mat
+Loading Cluster file and Update Queue: Clusters-PRT^g|RP-1.mat
+Loading Cluster file and Update Queue: Clusters-$-1.mat
+Loading Cluster file and Update Queue: Clusters-@NAC^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NAC^g-1.mat
+Loading Cluster file and Update Queue: Clusters-WHADVP^g|WRB-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|VP^g|VBZ-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|JJR-1.mat
+Loading Cluster file and Update Queue: Clusters-@ADJP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-RBS-1.mat
+Loading Cluster file and Update Queue: Clusters-FRAG^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|NNPS-1.mat
+Loading Cluster file and Update Queue: Clusters-PP^g|TO-1.mat
+Loading Cluster file and Update Queue: Clusters-ADVP^g|RBS-1.mat
+Loading Cluster file and Update Queue: Clusters-@QP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-WHNP^g|WDT-1.mat
+Loading Cluster file and Update Queue: Clusters-JJR-1.mat
+Loading Cluster file and Update Queue: Clusters-PDT-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|VP^g|VBD-1.mat
+Loading Cluster file and Update Queue: Clusters-SINV^g-1.mat
+Loading Cluster file and Update Queue: Clusters-@SINV^g-2.mat
+Loading Cluster file and Update Queue: Clusters-VP^g|VBD-1.mat
+Loading Cluster file and Update Queue: Clusters-WHNP^g|WP-1.mat
+Loading Cluster file and Update Queue: Clusters-@ADVP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-ADVP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-WHNP^g|IN-1.mat
+Loading Cluster file and Update Queue: Clusters-@SBAR^g-1.mat
+Loading Cluster file and Update Queue: Clusters-:-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|JJ-1.mat
+Loading Cluster file and Update Queue: Clusters-RBR-1.mat
+Loading Cluster file and Update Queue: Clusters-ADVP^g|RBR-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|NNS-2.mat
+Loading Cluster file and Update Queue: Clusters-@UCP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-UCP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-VP^g|VBN-1.mat
+Loading Cluster file and Update Queue: Clusters-SBAR^g-2.mat
+Loading Cluster file and Update Queue: Clusters-VP^g|VBP-1.mat
+Loading Cluster file and Update Queue: Clusters-S^g|VP^g-2.mat
+Loading Cluster file and Update Queue: Clusters-VBG-2.mat
+Loading Cluster file and Update Queue: Clusters-JJ-3.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|NN-2.mat
+Loading Cluster file and Update Queue: Clusters-QP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|CD-1.mat
+Loading Cluster file and Update Queue: Clusters-MD-2.mat
+Loading Cluster file and Update Queue: Clusters-RB-2.mat
+Loading Cluster file and Update Queue: Clusters-@PP^g-1.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g-2.mat
+Loading Cluster file and Update Queue: Clusters-NNPS-1.mat
+Loading Cluster file and Update Queue: Clusters-SBAR^g|S^g-1.mat
+Loading Cluster file and Update Queue: Clusters-.-2.mat
+Loading Cluster file and Update Queue: Clusters-VBZ-2.mat
+Loading Cluster file and Update Queue: Clusters-VB-2.mat
+Loading Cluster file and Update Queue: Clusters-ADJP^g|JJ-1.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|PRP-2.mat
+Loading Cluster file and Update Queue: Clusters-PRP$-2.mat
+Loading Cluster file and Update Queue: Clusters-,-3.mat
+Loading Cluster file and Update Queue: Clusters-VBP-2.mat
+Loading Cluster file and Update Queue: Clusters--RRB--1.mat
+Loading Cluster file and Update Queue: Clusters-CC-2.mat
+Loading Cluster file and Update Queue: Clusters-VBD-2.mat
+Loading Cluster file and Update Queue: Clusters-NP^g|NNP-1.mat
+Loading Cluster file and Update Queue: Clusters-TO-2.mat
+Loading Cluster file and Update Queue: Clusters-ADVP^g|RB-2.mat
+Loading Cluster file and Update Queue: Clusters-PRN^g-1.mat
+Loading Cluster file and Update Queue: Clusters-POS-2.mat
+Loading Cluster file and Update Queue: Clusters--LRB--1.mat
+Loading Cluster file and Update Queue: Clusters-@PRN^g-1.mat
+Loading Cluster file and Update Queue: Clusters-NNS-3.mat
+Loading Cluster file and Update Queue: Clusters-VBN-2.mat
+Loading Cluster file and Update Queue: Clusters-@VP^g-3.mat
+Loading Cluster file and Update Queue: Clusters-VP^g-4.mat
+Loading Cluster file and Update Queue: Clusters-NP^g-4.mat
+Loading Cluster file and Update Queue: Clusters-@NP^g-4.mat
+Loading Cluster file and Update Queue: Clusters-DT-4.mat
+Loading Cluster file and Update Queue: Clusters-NNP-3.mat
+Loading Cluster file and Update Queue: Clusters-CD-2.mat
+Loading Cluster file and Update Queue: Clusters-NN-4.mat
+Loading Cluster file and Update Queue: Clusters-``-2.mat
+Loading Cluster file and Update Queue: Clusters-''-2.mat
+Loading Cluster file and Update Queue: Clusters-S^g-3.mat
+Loading Cluster file and Update Queue: Clusters-@S^g-4.mat
+Loading Cluster file and Update Queue: Clusters-PP^g-4.mat
+Loading Cluster file and Update Queue: Clusters-IN-4.mat
+WARNING: ASSIGNING CLUSTERS TO NODES IN POSTORDER. MAKE SURE SAME HAS BEEN USED FOR ASSIGING FEATURES.
+Creating a local copy of nonterminalsClusterInfo
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................Starting clock [LPCFG-Basics]
+Reading trees (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/StandardClusterEstimate-kmeans/train-5846a6ad-2ccc-4bb6-850f-20733fa07d53.txt
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Size of terminalsAlphabet: 177
+Size of nonterminalsAlphabet: 123
+Size of interminals: 47
+Size of preterminals: 76
+Size of all rules: 1173
+Size of unary rules: 289
+Size of binary rules: 884
+Initialising parameters ... pi ... q ... t ... normalising parameter ...
+Stopping clock [LPCFG-Basics]: 0 seconds
+Starting clock [LPCFG-Estimate]
+Reading trees (one-by-one) from the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/StandardClusterEstimate-kmeans/train-5846a6ad-2ccc-4bb6-850f-20733fa07d53.txt
+..........................[10%, 0s]
+..........................[20%, 0s]
+..........................[31%, 0s]
+..........................[41%, 0s]
+..........................[51%, 0s]
+..........................[62%, 0s]
+..........................[72%, 0s]
+..........................[82%, 0s]
+..........................[93%, 0s]
+................
+Normalising parameters ...pi ...q ...t ...
+Stopping clock [LPCFG-Estimate]: 0 seconds
+Starting clock [LPCFG-Writing]
+Writing LPCFG to the file: /disk/ocean/snarayan/dist/lpcfgparser/example-output/spectral_naacl_feat-0_rare-5_t-pos_nt-pos/StandardClusterEstimate-kmeans/grammar-5846a6ad-2ccc-4bb6-850f-20733fa07d53.txt
+Stopping clock [LPCFG-Writing]: 0 seconds
+Parallel pool using the 'local' profile is shutting down.

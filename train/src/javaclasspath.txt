@@ -1,0 +1,5 @@
+/disk/ocean/snarayan/dist/lpcfgparser/train/src/jar/berkeleyParser.jar
+/disk/ocean/snarayan/dist/lpcfgparser/train/src/jar/colt.jar
+/disk/ocean/snarayan/dist/lpcfgparser/train/src/jar/trove.jar
+/disk/ocean/snarayan/dist/lpcfgparser/train/src/jar/commons-cli-1.2.jar
+/disk/ocean/snarayan/dist/lpcfgparser/train/src/jar/lpcfg-smoothclusterestimation-universal.jar
