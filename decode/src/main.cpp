@@ -37,8 +37,6 @@
 
 #include "ChartFilter.h"
 
-#include "ChartProjectionCKY.h"
-
 #include "lpcfg_flatten.h"
 
 #include "EditDistance.h"
@@ -122,36 +120,6 @@ int main(int argc, char** argv) {
                                                 "No vocabulary threshold specified"), signature::vars.getStringValue("grammarOutputPrefix", "gr", true, "No grammar output prefix specified."),
 signature::vars.getDoubleValue("scalingFactor", 1.0, true, "No scaling factor specified."), signature::vars.getIntValue("iterationsNumber", 30, true, "Number of iterations for EM"));
 	}
-	if (string(command) == string("ckyprojectionparse")) {
-			penn_treebank tb;
-
-                	bool b = tb.open_file(
-                                signature::vars.getStringValue("treebankInput", "none", true,
-                                                "No input treebank (sentences) specified"));
-
-	                if (!b) {
-        	                cerr << "Could not open treebank file. Exiting.";
-
-                	        return 0;
-                	}
-
-			ChartProjectionCKY ckyProjection;
-
-        		ckyProjection.parseFile(&tb, signature::vars.getStringValue("grammar", "none", true,
-                                                "No grammar file specified"),  signature::vars.getStringValue("vocabFile", "none", true,
-                                                "No vocabulary file specified"),  signature::vars.getIntValue("vocabThreshold", 0, true,
-                                                "No vocabulary threshold specified"), signature::vars.getIntValue("reducedDim", 0, true,
-                                                "No dimension to reduce do given (0 no reduction, 1+ add reduction)"),
-signature::vars.getDoubleValue("epsilon", 0, true, "epsilon such that | f(x)*f(x) - x*y | < epsilon"),
-signature::vars.getDoubleValue("delta", 0, true, "delta for the probability that we have an error larger than epsilon"),
-signature::vars.getIntValue("repeatNum", 0, true,
-                                                "Number of inside probabilities to average"),
-signature::vars.getIntValue("secondDimReduce", 0, true,
-                                                "Secondary dimensionality reduction"),
-signature::vars.getIntValue("longestLength", 0, true,
-                                                "Longest sentence possible"));
-
-		}
 
 	if (string(command) == string("filterchart")) {
 		ChartFilter filter;
