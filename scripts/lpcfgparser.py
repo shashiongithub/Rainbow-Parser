@@ -125,7 +125,7 @@ except ValueError:
 
 myExec = checkCompiled()
 
-[r,p] = chooseRootAndPOS("/disk/ocean/scohen/spelling/EM-new/models_bigram8/em_grammar.5.gra")
+[r,p] = chooseRootAndPOS(pruneGrammarFile)
 
 convertFileToTrees(inputFile, inputFile+".tmp", r, p)
 
