@@ -24,7 +24,11 @@ def convertFileToTrees(sentenceFile, outputFile, root, POS):
 				print >> g, "("+root,
 
 				for w in words:
-					print >> g, "("+POS+" "+w+")",
+					if "^" in w:
+						w2 = w.split("^")
+						print >> g, "("+w2[1]+" "+w2[0]+")",
+					else:
+						print >> g, "("+POS+" "+w+")",
 
 				print >> g, ")"
 

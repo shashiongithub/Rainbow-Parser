@@ -90,6 +90,8 @@ where
 
 The python script calls the main binary lpcfgparser driver, and outputs the parses to the standard output. If it cannot parse a sentence for some reason, it will output "( )". All trees are output in standard bracketing format such as in the Penn Treebank.
 
+Note that the lpcfgparser.py script uses ^ as a special symbol for the different tokens. If the parser sees a token x^y, it will only take x to be the word to be parsed.
+
 ### Normalizing Treebanks
 
 The algorithms implemented in this project all assume a binary trees with preterminals. The treebanks that often come in practice do not have to contain binary trees.
