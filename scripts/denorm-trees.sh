@@ -1,5 +1,13 @@
 #! /bin/sh
 
+## From README.md:
+##
+## To debinarize trees use:
+##
+##        ./denorm-trees.sh --normalisedparsetrees [original-treebank-in-binarized-form-filename] --denormalisedparsetrees [output-in-debinarized-form-filename]
+
+
+
 # export PATH
 # source ~/.bash_rc
 

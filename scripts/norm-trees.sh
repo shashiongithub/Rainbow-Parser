@@ -1,5 +1,11 @@
 #! /bin/sh
 
+## From README.md:
+## To binarize trees use:
+##
+##        ./norm-trees.sh --originalparsetrees [original-treebank-filename] --normalisedparsetrees [output-in-binarized-form-filename]
+
+
 # export PATH
 # source ~/.bash_rc
 
