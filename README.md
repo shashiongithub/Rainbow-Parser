@@ -90,7 +90,11 @@ where
 
 The python script calls the main binary lpcfgparser driver, and outputs the parses to the standard output. If it cannot parse a sentence for some reason, it will output "( )". All trees are output in standard bracketing format such as in the Penn Treebank.
 
-Note that the lpcfgparser.py script uses ^ as a special symbol for the different tokens. If the parser sees a token x^y, it will only take x to be the word to be parsed.
+Note that the lpcfgparser.py script uses ^ as a special symbol for the different tokens. If the parser sees a token x^y, it will only take x to be the word to be parsed. y will be treated
+as the POS tag of the word.
+
+New note: it is now necessary to specify sentence tokens as x^y, where both x and y are specified. This is necessary because unknown words used to be replaced by their corresponding POS tags,
+and if an underspecified POS tag is used for such words, the parser may fail on the sentence.
 
 ### Normalizing Treebanks
 
