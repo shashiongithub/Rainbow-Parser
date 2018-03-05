@@ -16,8 +16,10 @@ import sys
 def convertFileToTrees(sentenceFile, outputFile, root, POS):
 
 	with open(sentenceFile, "r") as f:
+		k = 0
 		with open(outputFile, "w") as g:
 			for sent in f:
+				k = k + 1
 				sent = sent.rstrip()
 				words = sent.split(" ")
 
@@ -28,6 +30,7 @@ def convertFileToTrees(sentenceFile, outputFile, root, POS):
 						w2 = w.split("^")
 						print >> g, "("+w2[1]+" "+w2[0]+")",
 					else:
+						print >> sys.stderr, "*** WARNING: token \"" + w + "\" in sentence " + str(k) + " does not contain POS tag. It should be "+w+"^POSTag. See README.md for more details."
 						print >> g, "("+POS+" "+w+")",
 
 				print >> g, ")"
